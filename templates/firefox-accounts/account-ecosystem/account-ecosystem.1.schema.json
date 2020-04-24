@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "account-ecosystem",
+  "properties": {
+    @ACCOUNT-ECOSYSTEM_ECOSYSTEM_USER_ID_1_JSON@,
+    @ACCOUNT-ECOSYSTEM_PREVIOUS_ECOSYSTEM_USER_IDS_1_JSON@
+  },
+  "required": [
+    "ecosystem_user_id"
+  ]
+}

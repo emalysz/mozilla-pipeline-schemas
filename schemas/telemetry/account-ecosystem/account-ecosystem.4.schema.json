@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "ecosystem_user_id": {
+      "description": "Account Ecosystem Telemetry user identifier; this value is not present in the original payload sent by clients, but is instead inserted by the pipeline after decrypting and removing ecosystem_anon_id",
+      "pattern": "[a-zA-z0-9]{32}",
+      "type": "string"
+    },
+    "previous_ecosystem_user_ids": {
+      "description": "Account Ecosystem Telemetry user identifier; this value is not present in the original payload sent by clients, but is instead inserted by the pipeline after decrypting and removing ecosystem_anon_id",
+      "items": {},
+      "type": "array"
+    },
+    "version": {
+      "maximum": 4,
+      "minimum": 4,
+      "type": "number"
+    }
+  },
+  "required": [
+    "ecosystem_user_id",
+    "version"
+  ],
+  "title": "account-ecosystem",
+  "type": "object"
+}

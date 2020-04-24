@@ -1,0 +1,7 @@
+"previous_ecosystem_user_ids": {
+  "description": "Account Ecosystem Telemetry user identifier; this value is not present in the original payload sent by clients, but is instead inserted by the pipeline after decrypting and removing ecosystem_anon_id",
+  "type": "array",
+  "items": {
+    @ACCOUNT-ECOSYSTEM_USER_ID_TYPE_1_JSON@
+  }
+}
